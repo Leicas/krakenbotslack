@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import requests, json, time
+import requests, json, time, os, sys
+os.chdir(sys.path[0])
 with open("data.json","r") as data_file:
     historique = json.load(data_file)
 for attempt in range(10):
